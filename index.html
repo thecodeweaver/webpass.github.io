@@ -6,6 +6,7 @@
         <title>WebPass</title>
 
         <!-- Latest compiled and minified CSS -->
+        <!-- Cyborg theme https://bootswatch.com/cyborg/ -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css">
 
         <!-- jQuery library -->
@@ -14,7 +15,10 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-        
+        <!-- Scripts used for password generation -->
+        <script src="wordlist-5-dice-eff.js""></script>
+        <script src="password_generation.js"></script>
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
@@ -29,11 +33,17 @@
         <div class="card text-white bg-secondary mb-3 mx-auto" style="width: 500px">
             <div class="card-body text-center">
               <h4 class="card-title text-center">Your New Password</h4>
-              <button type="button" class="btn btn-primary">Generate</button>
+              <input id="readOnlyInput" class="form-control" type="text" placeholder="Password" readonly="">
+              <br>
+              <button type="button" class="btn btn-primary" onclick="generatePassword()">Generate</button>
             </div>
           </div>
 
-          <!--TODO: Add Footer-->
+          <footer class="text-center text-white bg-primary">
+            <div class="card-footer text-body-secondary">
+                Made with <3 by <a class="text-white" target="_blank" href="https://github.com/thecodeweaver"><u>TheCodeWeaver</u></a>
+            </div>
+          </footer>
     </body>
 
 </html>
