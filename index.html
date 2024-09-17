@@ -25,15 +25,17 @@
 
     <body>
         <div class="jumbotron text-center text-white bg-primary">
-            <h1 class="display-3">WebPass: Generate secure, memorable passwords in your browser</h1>
-            <h2>WebPass uses Diceware, implemented in JavaScript to generate secure passwords that are easy to remember.</h2>
+            <h1 class="display-3" style="font-weight:bold">WebPass</h1>
+            <h3>Generate secure, memorable passwords in your browser</h3>
+            <br>
+            <h5>WebPass uses Diceware, implemented in JavaScript to generate secure passwords that are easy to remember.</h5>
         </div>
 
         <!--Card to hold the generated password-->
         <div class="card text-white bg-secondary mb-3 mx-auto" style="width: 500px">
             <div class="card-body text-center">
-              <h4 class="card-title text-center">Your New Password</h4>
-              <input id="readOnlyInput" class="form-control" type="text" placeholder="Password" readonly="">
+              <h5 class="card-title text-center">Your New Password</h5>
+              <input id="passwordOutput" class="form-control" type="text" placeholder="Password" readonly="" style="font-size: 1.5em;">
               <br>
               <button type="button" class="btn btn-primary" onclick="generatePassword()">Generate</button>
             </div>
